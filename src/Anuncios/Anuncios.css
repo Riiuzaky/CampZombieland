@@ -45,6 +45,15 @@
     background-color: rgb(255, 255, 255);
     margin-top: 8%;
   }
+  
+  @media screen and (max-width: 768px) {
+    .noticias-container {
+      grid-template-columns: 1fr;
+      margin-right: 0;
+      margin-top: 20px;
+      padding: 0 20px;
+    }
+  }
 
   
   .noticia {

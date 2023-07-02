@@ -12,22 +12,21 @@
   display: flex;
   flex-wrap: wrap;
   margin-top: 50px;
-  width: 100%; /* Cambia "inherit" a "100%" para ocupar todo el ancho disponible */
+  width: 100%;
   background-color: white;
-  
 }
 
 .contenedor-testimonios {
-  flex: 1; /* Ocupa el espacio restante disponible */
-  order: 2; /* Cambia el orden del elemento, situándolo después de contenedor-columna */
-  flex-grow: 1; /* Se expande hasta el borde derecho */
+  flex: 1;
+  order: 2;
+  flex-grow: 1;
   margin-right: 5%;
   margin-left: 2.5%;
 }
 
 .contenedor-columna {
   width: 40%;
-  align-self: stretch; /* Estirar verticalmente para igualar la altura */
+  align-self: stretch;
   margin-left: 5%;
 }
 
@@ -54,4 +53,22 @@
   margin-bottom: 50px;
   display: contents;
   margin: auto;
+}
+
+/* Estilos responsivos para dispositivos móviles */
+@media (max-width: 768px) {
+  .contenedor-principal {
+    flex-direction: column;
+  }
+
+  .contenedor-columna {
+    width: 100%;
+    margin-left: 0;
+    margin-bottom: 20px;
+  }
+
+  .contenedor-testimonios {
+    margin-right: 0;
+    margin-left: 0;
+  }
 }
