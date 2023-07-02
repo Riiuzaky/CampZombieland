@@ -16,7 +16,7 @@ export function Inicio() {
         
         <div className='contenedor-card'>
           <Card
-            title='Bienvenidos a Zombieland'
+            title=''
             img={foto}
           />
         </div>
