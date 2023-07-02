@@ -1,5 +1,6 @@
 import React from 'react';
 import './Header.css';
+import { Link } from 'react-router-dom';
 import logo from '../Imagenes/Logo.jpeg';
 
 export function Header() {
@@ -9,10 +10,10 @@ export function Header() {
         <img src={logo} alt="Logo" />
       </div>
       <ul className="nav-links">
-        <li><a href="/">Inicio</a></li>
-        <li><a href="/eventos">Eventos</a></li>
-        <li><a href="/miembros">Miembros</a></li>
-        <li><a href="/anuncios">Anuncios</a></li>
+      <Link to='/'> Inicio </Link>
+      <Link to='/eventos'> Eventos </Link>
+      <Link to='/miembros'> Miembros </Link>
+      <Link to='/anuncios'> Anuncios </Link>
       </ul>
     </nav>
   );
