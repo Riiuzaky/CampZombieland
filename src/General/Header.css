@@ -15,29 +15,47 @@ nav {
     object-fit: cover;
   }
   
+  .nav-container {
+    position: relative;
+  }
+
   .nav-links {
     list-style: none;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-left: 20px;
+    display: none; /* Oculta la lista por defecto */
+    position: absolute;
+    top: 100%; /* Posiciona la lista debajo del contenedor */
+    left: -70px; /* Ajusta el valor negativo para mover la lista hacia la izquierda */
+    width: calc(100% + 70px); /* Ajusta el ancho para compensar el desplazamiento hacia la izquierda */
+    background-color: rgba(0, 0, 0, 0.9);
+    padding: 10px;
+    z-index: 1; /* Asegura que la lista aparezca por encima del resto de los elementos */
+  }
+  
+  .nav-links.active {
+    display: block; /* Muestra la lista cuando está activa */
   }
   
   .nav-links li {
-    margin-right: 10px;
+    margin-bottom: 5px;
   }
   
   .nav-links a {
+    display: block; /* Hace que los enlaces ocupen todo el ancho */
     text-decoration: none;
     color: #ffffff;
     font-weight: bold;
     font-size: 20px;
-    margin-right: 70px;
+    margin-right: 0;
   }
   
   .nav-links a:hover {
     color: #ff0000;
   }
+  
+  .menu-toggle {
+    display: block;
+  }
+  
   
   /* Estilos para el menú de hamburguesa */
   .menu-toggle {
