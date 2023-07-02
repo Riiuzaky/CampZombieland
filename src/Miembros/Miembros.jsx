@@ -3,7 +3,7 @@ import './Miembros.css';
 import fondo from '../Imagenes/MiembrosFondo.jpg';
 
 export function Miembros() {
-  const [miembros, setMiembros] = useState([
+  const miembros = [
     {
       id: 1,
       nombre: 'Riiuzaky',
@@ -29,7 +29,7 @@ export function Miembros() {
       info: 'General del clan, persona en cargada de ofrecer ayuda y acompañamiento a los oficiales para llevar a cabo sus labores',
     },
     // Agrega más miembros aquí
-  ]);
+  ];
 
   return (
     <div className="miembros-container">
